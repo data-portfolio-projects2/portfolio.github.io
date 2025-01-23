@@ -13,8 +13,9 @@ body {
     min-height: 100vh;
 }
 
+/* Header styles */
 header {
-    background-color: #4CAF50; /* Green header background */
+    background-color: #007BFF; /* Blue header background */
     color: white;
     padding: 20px 0;
 }
@@ -28,6 +29,16 @@ p {
     font-size: 1.2em;
 }
 
+header a {
+    color: white; /* Email link color */
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline; /* Underline email link on hover */
+}
+
+/* Main content styles */
 main {
     width: 80%;
     max-width: 800px;
@@ -43,10 +54,11 @@ section {
 }
 
 h2 {
-    color: #4CAF50; /* Match header color */
+    color: #007BFF; /* Blue heading for sections */
     margin-bottom: 10px;
 }
 
+/* List styles */
 ul {
     list-style-type: none;
     padding: 0;
@@ -57,14 +69,15 @@ ul li {
 }
 
 ul li a {
-    color: #4CAF50;
+    color: #007BFF; /* Blue links */
     text-decoration: none;
 }
 
 ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline links on hover */
 }
 
+/* Footer styles */
 footer {
     margin-top: 20px;
     font-size: 0.9em;
