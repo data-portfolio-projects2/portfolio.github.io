@@ -1,57 +1,78 @@
-/* General Styles */
+/* Set global styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f0f0f0; /* Light gray background */
-    color: #333; /* Dark gray text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Header styles */
 header {
-    position: relative; /* Ensure content inside header is positioned on top */
-    width: 100%; /* Full width */
-    height: 250px; /* Set your preferred header height */
-    text-align: center; /* Center the text inside header */
-    color: white; /* Text color */
-    padding: 20px 0; /* Adjust padding as needed */
+  background-image: url('1.webp'); /* Set the image as the background */
+  background-size: cover; /* Ensure the image covers the whole header */
+  background-position: center top; /* Align the image to the top center */
+  height: 250px; /* Adjust the height as needed for the header */
+  text-align: center;
+  color: white; /* Set text color to white for contrast */
+  padding: 20px 0;
 }
 
-.header-image {
-    position: absolute; /* Position the image absolutely inside the header */
-    top: 0;
-    left: 0;
-    width: 100%; /* Make the image take the full width of the header */
-    height: 100%; /* Make the image take the full height of the header */
-    object-fit: cover; /* Ensure the image covers the entire header without distortion */
-    z-index: -1; /* Place the image behind the text */
+/* Header title and email */
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin: 0;
-    position: relative; /* Keep the title on top of the image */
-    z-index: 1; /* Ensure title is above the image */
+header p {
+  font-size: 1.2em;
 }
 
-p {
-    font-size: 1.2em;
-    position: relative; /* Keep the email text above the image */
-    z-index: 1; /* Ensure email is above the image */
+header a {
+  color: white; /* Make the email link white */
+  text-decoration: none; /* Remove underline */
 }
 
+/* Main content section */
 main {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
+/* Section styles */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section ul li {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+section ul li a {
+  color: #0077b5;
+  text-decoration: none;
+}
+
+section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
 footer {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #777;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  font-size: 1em;
 }
