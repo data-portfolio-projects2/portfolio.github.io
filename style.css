@@ -1,21 +1,95 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Dark gray text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header Style */
 header {
   background-image: url('1.webp'); /* Set the image as the background */
-  background-size: 100% 100%; /* Stretch the image to fit both width and height */
-  background-position: top center; /* Position the image at the top */
-  width: 100%; /* Make sure the header spans the full width */
+  background-size: cover; /* Cover the entire header area without distortion */
+  background-position: center top; /* Position the image at the top-center */
+  width: 100%; /* Ensure the header spans the full width */
   height: 300px; /* Adjust the height as needed for the header */
   text-align: center; /* Center the text in the header */
   color: white; /* White text for better contrast */
   padding: 20px 0;
+  position: relative; /* Ensure the header content stays on top of the image */
 }
 
+/* Title styling */
 h1 {
   font-size: 2.5em;
   margin: 0;
-  position: relative; /* Keep the title on top of the image */
+  position: relative; /* Ensure title stays on top of background image */
+  z-index: 1; /* Ensure text is on top of the image */
 }
 
+/* Paragraph styling */
 p {
   font-size: 1.2em;
-  position: relative; /* Keep the email text above the image */
+  position: relative; /* Keep the paragraph text above the image */
+  z-index: 1; /* Ensure text is on top of the image */
+}
+
+/* Optional: Add some extra styling for links (email) */
+a {
+  color: #fff; /* White link color for contrast */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+main {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin: 20px 0;
+}
+
+h2 {
+  color: #4CAF50; /* Match header color */
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #777;
 }
