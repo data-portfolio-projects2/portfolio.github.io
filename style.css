@@ -9,24 +9,35 @@ body {
 }
 
 header {
-    background-image: url('1.webp'); /* Set the image as the background */
-    background-size: cover; /* Ensure the image covers the whole header */
-    background-position: center top; /* Align the image to the top center */
-    height: 250px; /* Adjust the height as needed for the header */
-    text-align: center;
-    color: white; /* Set text color to white for contrast */
-    padding: 20px 0;
+    position: relative; /* Ensure content inside header is positioned on top */
+    width: 100%; /* Full width */
+    height: 250px; /* Set your preferred header height */
+    text-align: center; /* Center the text inside header */
+    color: white; /* Text color */
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+.header-image {
+    position: absolute; /* Position the image absolutely inside the header */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the image take the full width of the header */
+    height: 100%; /* Make the image take the full height of the header */
+    object-fit: cover; /* Ensure the image covers the entire header without distortion */
+    z-index: -1; /* Place the image behind the text */
 }
 
 h1 {
     font-size: 2.5em;
     margin: 0;
     position: relative; /* Keep the title on top of the image */
+    z-index: 1; /* Ensure title is above the image */
 }
 
 p {
     font-size: 1.2em;
     position: relative; /* Keep the email text above the image */
+    z-index: 1; /* Ensure email is above the image */
 }
 
 main {
