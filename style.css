@@ -1,85 +1,27 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f0f0f0; /* Light gray background */
-    color: #333; /* Dark gray text */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+header {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
 }
 
-/* Header styles */
-header {
-    background-color: #007BFF; /* Blue header background */
-    color: white;
-    padding: 20px 0;
+.header-image {
+  width: 100%; /* Make the image span the entire width */
+  height: 100%; /* Ensure it covers the entire header */
+  object-fit: cover; /* Ensure the image doesn't stretch disproportionately */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Put image behind the text */
 }
 
 h1 {
-    font-size: 2.5em;
-    margin: 0;
+  font-size: 2.5em;
+  margin: 0;
+  position: relative; /* Keep the title above the image */
 }
 
 p {
-    font-size: 1.2em;
-}
-
-header a {
-    color: white; /* Email link color */
-    text-decoration: none;
-}
-
-header a:hover {
-    text-decoration: underline; /* Underline email link on hover */
-}
-
-/* Main content styles */
-main {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin: 20px 0;
-}
-
-h2 {
-    color: #007BFF; /* Blue heading for sections */
-    margin-bottom: 10px;
-}
-
-/* List styles */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-ul li a {
-    color: #007BFF; /* Blue links */
-    text-decoration: none;
-}
-
-ul li a:hover {
-    text-decoration: underline; /* Underline links on hover */
-}
-
-/* Footer styles */
-footer {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #777;
+  font-size: 1.2em;
+  position: relative; /* Keep the email text above the image */
 }
