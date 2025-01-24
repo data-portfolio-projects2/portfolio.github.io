@@ -9,27 +9,30 @@ body {
 .header {
     position: relative;
     width: 100%;
-    height: 20vh; /* This limits the height of the header to 20% of the viewport height */
-    background-color: #333;
+    height: 20vh; /* Image covers 1/5th of the page height */
 }
 
 .header-image {
     position: absolute;
-    width: 20vw;  /* Image takes up 1/5th of the width of the viewport */
-    height: 100%;
-    object-fit: cover; /* Ensures the image fills the height without distortion */
     top: 0;
     left: 0;
+    width: 100%; /* Stretches image across the full width */
+    height: 100%; /* Covers the header height */
+    object-fit: cover; /* Ensures the image fits without distortion */
+    z-index: -1; /* Places the image behind the title */
 }
 
 .title {
     position: absolute;
-    top: 50%;
-    left: 25%; /* Centers the title over the image */
-    transform: translateY(-50%); /* Vertically centers the text */
+    top: 10px; /* Slight padding from the top */
+    left: 10px; /* Slight padding from the left */
     color: white;
     font-size: 2em;
     font-weight: bold;
+    z-index: 1; /* Ensures the title stays above the image */
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a subtle background to make the text readable */
+    padding: 5px 10px; /* Padding for better spacing */
+    border-radius: 5px; /* Rounded edges for aesthetic */
 }
 
 /* Footer styles */
